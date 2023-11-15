@@ -1,0 +1,45 @@
+<%- include('head') %>
+
+    <div class="container-fluid" style="background-color:black;width:100%;min-height: 100vh;display: flex;justify-content: center;">
+        <div class="container outer" style="background-color:black;width:100%;min-height: 100vh;margin: 20px;">
+            <div class="container" style="width:80%">
+                <div class="container" style="    background-color: rgb(38 37 36);
+        padding: 11px 20px;
+        border-radius: 18px;">
+                    <h3 style="
+          font-size: 1.75rem;
+          color: white;">User</h3>
+                    <p style="color: white;
+          font-size: 1.3rem;
+          padding-left:40px;
+          margin: 0;">
+                        <%=prompt%>
+                    </p>
+                </div>
+                <br><br>
+                <div class="container" style="    background-color: rgb(38 37 36);
+          padding: 11px 20px;
+          border-radius: 18px;">
+                    <h3 style="
+            font-size: 1.75rem;
+            color: white;">TRI</h3>
+                    <p style="color: aquamarine;
+            font-size: 1rem;
+            padding-left:40px;
+            margin: 0;">
+                        <% answer.forEach((e)=>{ %>
+                            <p style="color: white">
+                                <%= e %>
+                            </p>
+                            <% }); %>
+                </div>
+                <div class="container" style="display: flex;justify-content: center;"><a href="/" style="margin: 20px 0;"><button style="background-color: white;
+                    padding: 10px 20px;
+                    border-radius: 10px;
+                    outline: none;">Go Back!</button></a></div>
+            </div>
+
+        </div>
+
+
+    </div>

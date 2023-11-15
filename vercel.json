@@ -1,0 +1,6 @@
+{
+  "rewrites": [{ "source": "/(.*)", "destination": "/app" }],
+  "env": {
+    "OPENAI_API_KEY": "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"
+  }
+}
