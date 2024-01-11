@@ -3,7 +3,7 @@ const bodyparser = require("body-parser");
 const app = express();
 const request = require("request");
 const https = require("https");
-const OPENAI_API_KEY = "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";
+const OPENAI_API_KEY = "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";
 app.set('view engine', 'ejs');
 app.use(bodyparser.urlencoded({extended: true}));
 app.use(express.static("public"));
